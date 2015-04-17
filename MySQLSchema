@@ -1,0 +1,68 @@
+CREATE TABLE vehicle (
+  price               varchar2(7)
+  license_plate_no    varchar2(7),
+  longitude           
+  latitude
+  mileage             number(6),
+  vColor              varchar2(15),
+  vYear               number(4),
+  vMake               
+  vModel
+  vin                 number(17),
+  storenum            
+  vType
+  vCondition
+  renteduntil
+  primary key (vin),
+  foreign key ()
+);
+
+CREATE TABLE employee (
+  ssn
+  superssn
+  dob
+  address
+  city
+  state
+  zip
+  phonenum
+  email
+  storenum
+  salary
+  startdate
+  employeeid
+  jobtype
+  primary key(ssn),
+  foreign key ()
+  
+);
+
+CREATE TABLE customer (
+  email
+  fname
+  lname
+  mint
+  address
+  city
+  state
+  zip
+  username
+  password
+  phonenum
+  vin
+  primary key(username),
+  foreign key()
+  
+);
+
+CREATE TABLE store (
+  phonenum
+  address
+  city
+  state
+  zip
+  storenum
+  primary key(storenum),
+  foreign key()
+
+);
