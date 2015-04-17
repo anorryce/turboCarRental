@@ -1,0 +1,45 @@
+Create new customer (username, FName, LName)
+insert into customer (username, FName, LName)
+values (0001, ‘Tony’, ‘Stark’);
+
+Create new billingStatement (username, address, city, state, zip, creditCard)
+insert into billingStatement (username, address, city, state, zip, creditCard)
+values (‘1230’, ‘1 Main Street, Beverly Hills, CA, 90210’, ‘1234567890009876’);
+
+Create new vehicle (VIN, vehicleYr, vehicleMake, vehicleModel, vehicleMileage)
+insert into vehicle (VIN, vehicleYr, vehicleMake, vehicleModel, vehicleMileage)
+values (‘1837265439’, ‘2013’, ‘Dodge’, ‘Charger’, 30000);
+
+Update billingStatement (address)
+update	billingStatement
+set		address = 31 Way Lane
+city = Greeneville
+state= TN
+zip = 37743
+where	username = ‘0021’;
+
+Create new carCheckOut(VIN, vehicleMileage)
+insert into carCheckOut (VIN,  vehicleMileage)
+values (‘5863253482’, 15000);
+
+Update inventory (vehicleVIN, vehicleYr, vehicleMake, vehicleModel)
+
+Display billingStatement (username, address, city, state, zip, creditCard)
+select	*
+from	billingStatement;
+
+Create new carReturn (vehicleVIN, vehicleMileage)
+insert into carReturn (vehicleVIN,  vehicleMileage)
+values (‘65’, ‘5863253482’, 15300);
+
+Update rentalStatus (isRented, vehicleVIN)
+update	rentalStatus
+set		isRented = ‘yes’
+where	vehicleID = ‘9251315313’;
+
+Update rentalRate (model_ID, vehicleModel, price)
+update	rentalRate
+set		priceRate = 80
+where	model_ID in (select	VIN
+			         from	vehicles
+			         where	vehicles.vehicleID = rentalRate.model_ID);
