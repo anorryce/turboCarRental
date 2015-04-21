@@ -17,52 +17,42 @@ CREATE TABLE vehicle (
   foreign key ()
 );
 
-CREATE TABLE employee (
-  ssn
-  superssn
-  dob
-  address
-  city
-  state
-  zip
-  phonenum
-  email
-  storenum
-  salary
-  startdate
-  employeeid
-  jobtype
-  primary key(ssn),
-  foreign key ()
-  
+CREATE TABLE Employee (
+SSN int(9) primary key,
+superSSN int(9) not null,
+DOB date,
+address varchar(50),
+city varchar(50),
+state varchar(2),
+zip varchar(5),
+phoneNum varchar(10) not null,
+email varchar(50),
+storeNum int(3),
+salary decimal(5,2) not null,
+startDate date,
+employeeID varchar(5) not null,
+jobType varchar(20)
 );
 
-CREATE TABLE customer (
-  email
-  fname
-  lname
-  mint
-  address
-  city
-  state
-  zip
-  username
-  password
-  phonenum
-  vin
-  primary key(username),
-  foreign key()
-  
+CREATE TABLE Customer (
+Email varchar(50) primary key,
+Username varchar(50) primary key,
+FName varchar(30) not null,
+LName varchar(30) not null,
+Mint varchar(1),
+address varchar(50),
+city varchar(50),
+state varchar(2),
+zip varchar(5),
+password varchar(20) not null
+phoneNum varchar(10)
 );
 
-CREATE TABLE store (
-  phonenum
-  address
-  city
-  state
-  zip
-  storenum
-  primary key(storenum),
-  foreign key()
-
+CREATE TABLE Store (
+storeNum int(3) primary key,
+phoneNum varchar(10) not null,
+address varchar(50),
+city varchar(50),
+state varchar(2),
+zip varchar(5)
 );
