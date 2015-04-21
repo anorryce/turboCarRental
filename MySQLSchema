@@ -1,20 +1,18 @@
-CREATE TABLE vehicle (
-  price               varchar2(7)
-  license_plate_no    varchar2(7),
-  longitude           
-  latitude
-  mileage             number(6),
-  vColor              varchar2(15),
-  vYear               number(4),
-  vMake               
-  vModel
-  vin                 number(17),
-  storenum            
-  vType
-  vCondition
-  renteduntil
-  primary key (vin),
-  foreign key ()
+CREATE TABLE Vehicle (
+VIN int(10) primary key,
+Price decimal (3,2) not null,
+LicensePlateNum varchar(7) not null,
+Longitude varchar(10),
+Latitude varchar(10),
+Mileage bigint,
+vColor varchar(10),
+vYear int(4) not null,
+vMake varchar(20) not null,
+vModel varchar(20) not null,
+vType varchar(10),
+vCondition varchar(20),
+storeNum int(3),
+RentedUntil date
 );
 
 CREATE TABLE Employee (
