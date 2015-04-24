@@ -41,26 +41,25 @@ INSERT INTO employee values
   ('Lyle','G','Leslie','666666603','09-JUN-1963','417 Hancock Ave','Chicago','IL','M',41000,'666666601',8,'lleslie@turbo.com','9-JAN-09','manager');
 --
 INSERT INTO customer VALUES
-  ();
+  (knorryce@lander.edu,Kim,Norryce,L,40 Finish St,McCormick,SC,21402,dogsareloyal,430-341-3321);
 INSERT INTO customer VALUES
-  ();
+  (tcambell@zmail.com,Tony,Campbell,E,20 May Ave,Greenwood,SC,29649,dogesmuchwowe,864-220-1324);
 INSERT INTO customer VALUES
-  ();
+  (ssmith@hotspot.com,Samantha,Smith,S,35 Too Small Ln,Columbia,SC,20120,password1,862-143-2341);
 INSERT INTO customer VALUES
-  ();
+  (lsmith@hotspot.com,Lisa,Smith,T,35 Too Small Ln,Columbia,SC,20120,password,862-143-2341);
 INSERT INTO customer VALUES
-  ();
+  (ptina1@lander.edu,Patricia,Tina,S,2020 Hwy 20,Greenwood,SC,29649,lulcats,864-325-2334);
 INSERT INTO customer VALUES
-  ();
+  (rheight@zmail.com,Roger,Height,L,230 Dirt Rd,Abbeville,SC,29620,high&dry,864-446-0439);
 INSERT INTO customer VALUES
-  ();
+  (ttinker@clemson.edu,Turner,Tinker,S,29 Candy Cane Ln,Columbia,SC,20120,bigstrucks&mud,845-323-4241);
 INSERT INTO customer VALUES
-  ();
+  (freel@zmail.com,Freed,Reel,O,22 Jump St,Lauren,SC,20131,austinmadethispassword,435-302-4235);
 INSERT INTO customer VALUES
-  ();
+  (lstylez@hotspot.com,Lyle,Stylez,R,21 Jump St,Lauren,SC,20132,moviesrcool,435-325-1452);
 INSERT INTO customer VALUES
-  ();
-
+  (tbear@lander.edu,Ted,Bear,Y,201 Road Blvd,Charelston,SC,10310,cyanide&happiness,543-042-4254);
 --
 
 INSERT INTO store VALUES
