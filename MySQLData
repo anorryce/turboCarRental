@@ -43,25 +43,4 @@ INSERT INTO employee values
   ('Lyle','G','Leslie','666666603','09-JUN-1963','417 Hancock Ave','Chicago','IL','M',41000,'666666601',8,'lleslie@turbo.com','9-JAN-09','manager');
 --
 
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
-INSERT INTO customer VALUES
-  ();
---
 
