@@ -18,7 +18,9 @@ INSERT INTO vehicle VALUES
   (94.00,HE04673,68.1043,-64.1053,150242,Green,1995,Honda,Ridgeline,4LSMA10LFS5643574,0002,truck,excellent,NULL);
 INSERT INTO vehicle VALUES
   (102.00,AL2575,27.1543,-2.5642,120454,Yellow,2001,Kia,Optima,1MASE24EKF0495435,0001,car,average,04-25-15);
+  
 --Random values for employee needs to be edited. Specificly superssn/ssn. They're not making sense.
+
 INSERT INTO employee VALUES
   ('Jane','P','Keller','222222201','02-FEB-1992','22 CandyCane Ln','Greenwood','SC','F',25000,'444444440',7,'jkeller@turbo.com','15-JAN-11','seller');
 INSERT INTO employee values
@@ -40,3 +42,26 @@ INSERT INTO employee values
 INSERT INTO employee values
   ('Lyle','G','Leslie','666666603','09-JUN-1963','417 Hancock Ave','Chicago','IL','M',41000,'666666601',8,'lleslie@turbo.com','9-JAN-09','manager');
 --
+
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+INSERT INTO customer VALUES
+  ();
+--
+
