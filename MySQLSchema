@@ -26,7 +26,7 @@ address varchar(50),
 city varchar(50),
 state char(2),
 zip number(5),
-phoneNum varchar(10) not null,
+phoneNum varchar(20) not null,
 email varchar(50),
 storeNum number(4),
 salary decimal(5,2) not null,
@@ -49,14 +49,13 @@ city varchar(50),
 state char(2),
 zip number(5),
 password varchar(20) not null,
-phoneNum varchar(10),
-primary key (email),
-primary key (userName)
+phoneNum varchar(20),
+primary key (email, userName)
 );
 
 CREATE TABLE Store (
 storeNum number(4),
-phoneNum varchar(10) not null,
+phoneNum varchar(20) not null,
 address varchar(50),
 city varchar(50),
 state char(2),
