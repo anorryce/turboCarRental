@@ -1,0 +1,78 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.sql.*; 
+import java.io.*; 
+/**
+ *
+ * @author glee
+ */
+public class DBTextTest {
+  public static void main (String args []) 
+      throws SQLException, IOException { 
+    try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+
+    String user, pass;
+    user = readEntry("userid  : ");
+    pass = readEntry("password: ");
+    
+    // connection string format
+    // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+    Connection conn = DriverManager.getConnection
+        ("jdbc:oracle:thin:@localhost:1521:xe",user,pass);
+
+    // ? in the query string is a parameter, which should be provided before execute query.
+    String query = "select fname, salary from employee where dno = ?";
+    PreparedStatement p = conn.prepareStatement (query); 
+    String ssn = readEntry("Enter a department : ");
+    // get ready to provide parameter(s)
+    p.clearParameters();
+    
+    // provide parameter to statement.
+    p.setInt(1, Integer.parseInt(ssn));
+    //p.setString(1,ssn);
+    
+    try
+    {
+        // execute selquery p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        while (r.next ()) { 
+          String fname = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          float fSalary = r.getFloat(2); // get 2nd attribute from the result tuple
+          System.out.println(fname + "  " + fSalary);
+        }         
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    conn.close();
+  }
+  
+  //readEntry function -- to read input string
+  static String readEntry(String prompt) {
+     try {
+       StringBuffer buffer = new StringBuffer();
+       System.out.print(prompt);
+       System.out.flush();
+       int c = System.in.read();
+       while(c != '\n' && c != -1) {
+         buffer.append((char)c);
+         c = System.in.read();
+       }
+       return buffer.toString().trim();
+     } catch (IOException e) {
+       return "";
+       }
+   }
+}   
+
