@@ -43,3 +43,30 @@ set		priceRate = 80
 where	model_ID in (select	VIN
 			         from	vehicles
 			         where	vehicles.vehicleID = rentalRate.model_ID);
+			       
+----------------------------------------------------------------------------------
+--join function
+
+select vModel,count(*)
+from aVehicle join storeLocation on aVehicle.storeNum = storeLocation.storeNum
+group by vModel;
+
+--agregate functions
+
+select count(*)
+from Customer;
+
+select sum(salary),max(salary)
+from Employee1
+where storeNum = '0002';
+
+--group by function
+
+select storeNum,count(*),avg(salary)
+from Employee1
+group by storeNum;
+
+--other query
+
+select Price,vMake,vModel,RentedUntil
+from aVehicle;
