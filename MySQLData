@@ -1,83 +1,105 @@
-INSERT INTO Vehicle VALUES
-  (200.00,'AU88451','56.0000','-25.0032',85430,'Green','1999','Honda','Accord','2HJBH12TZLM109185','0001','car','good','04-30-15');
-INSERT INTO Vehicle VALUES
-  (155.00,'ST2249','28.7045','10.2032',102453,'White','1994','Jeep','Wrangler','4IBDJ32LMAP323435','0001','truck','poor','04-27-15');
-INSERT INTO Vehicle VALUES
-  (228.00,'IN39222','45.3432,'1.2354',50678,'Red','2010','Toyota','4Runner','6ASFT05EIMG135463','0002','truck','excellent','04-29-15');
-INSERT INTO Vehicle VALUES
-  (110.00,'NO2911','23.2324','34.2342',124464,'Black','2005','Ford','Ranger','5EFAD14FEIM435345','0013','truck','good',NULL);
-INSERT INTO Vehicle VALUES
-  (234.00,'RR32554','4.2435','-4.1323',65473,'Red','2008','Chevy','Volt','3LAVA46TZPD653427','0005','car','excellent','04-25-15');
-INSERT INTO Vehicle VALUES
-  (140.00,'YC03126','23.2324','34.2342',107014,'White','2009','Nissan','Altima','7ELAE94PLA4326453','0013','car','average',NULL);
-INSERT INTO Vehicle VALUES
-  (224.00,'EM43572','-14.2657','2.6573',31504,'Black','2010','Suzuki','Equator','9IFLF14KGM2546764','0004','truck','good','04-28-15');
-INSERT INTO Vehicle VALUES
-  (160.00,'IC3675','4.1034','10.7564',106133,'Blue','2000','Honda','Accord','3KFLZ26OFD4059754','0003','car','poor','05-01-15');
-INSERT INTO Vehicle VALUES
-  (94.00,'HE04673','68.1043','-64.1053',150242,'Green','1995','Honda','Ridgeline','4LSMA10LFS5643574','0002','truck','excellent',NULL);
-INSERT INTO Vehicle VALUES
-  (102.00,'AL2575','27.1543','-2.5642',120454,'Yellow','2001','Kia','Optima','1MASE24EKF0495435','0001','car','average','04-25-15');
+INSERT INTO aVehicle VALUES
+  (200,'AU88451',85430,'Green','1999','Honda','Accord','2HJBH12TZLM109185','0001','car','good','04-30-15');
+INSERT INTO aVehicle VALUES
+  (155,'ST2249',174098,'White','1994','Jeep','Wrangler','4IBDJ32LMAP323435','0001','truck','poor','04-27-15');
+INSERT INTO aVehicle VALUES
+  (228,'IN39222',50678,'Red','2010','Toyota','4Runner','6ASFT05EIMG135463','0002','truck','excellent','04-29-15');
+INSERT INTO aVehicle VALUES
+  (110,'NO2911',124464,'Black','2005','Ford','Ranger','5EFAD14FEIM435345','0013','truck','good',NULL);
+INSERT INTO aVehicle VALUES
+  (234,'RR32554',65473,'Red','2008','Chevy','Volt','3LAVA46TZPD653427','0005','car','excellent','04-25-15');
+INSERT INTO aVehicle VALUES
+  (140,'YC03126',107014,'White','2009','Nissan','Altima','7ELAE94PLA4326453','0013','car','average',NULL);
+INSERT INTO aVehicle VALUES
+  (224,'EM43572',31504,'Black','2010','Suzuki','Equator','9IFLF14KGM2546764','0004','truck','good','04-28-15');
+INSERT INTO aVehicle VALUES
+  (160,'IC3675',106133,'Blue','2000','Honda','Accord','3KFLZ26OFD4059754','0003','car','poor','05-01-15');
+INSERT INTO aVehicle VALUES
+  (94,'HE04673',150242,'Green','1995','Honda','Ridgeline','4LSMA10LFS5643574','0002','truck','excellent',NULL);
+INSERT INTO aVehicle VALUES
+  (102,'AL2575',120454,'Yellow','2001','Kia','Optima','1MASE24EKF0495435','0001','car','average','04-25-15');
 --
-INSERT INTO Employee VALUES
-  ('Jane','P','Keller','222222201','02-FEB-1992','22 CandyCane Ln','Greenwood','SC','F',25000,'444444440',7,'jkeller@turbo.com','15-JAN-11','seller');
-INSERT INTO Employee VALUES
-  ('Jeff','H','Chase','333333301','07-JAN-1970','145 Bradbury St','Sacramento','CA','M',44000,'333333300',6,'jchase@turbo.com','10-SEP-10','seller');
-INSERT INTO Employee VALUES
-  ('Bonnie','S','Bays','444444401','19-JUN-1956','111 Hollow Ln','Milwaukee','WI','F',70000,'444444400',7,'bbays@turbo.com','30-MAR-09','manager');
-INSERT INTO Employee VALUES
-  ('Alec','C','Best','444444402','18-JUN-1966','233 Solid St','Milwaukee','WI','M',60000,'444444400',7,'abest@turbo.com','22-AUG-10','seller');
-INSERT INTO Employee VALUES
-  ('Sam','S','Snedden','444444403','31-JUL-1977','987 Windy St','Milwaukee','WI','M',48000,'444444400',7,'ssnedden@turbo.com','20-DEC-11','seller');
-INSERT INTO Employee VALUES
-  ('Nandita','K','Ball','555555501','16-APR-1969','222 Howard','Sacramento','CA','M',62000,'555555500',6,'nball@turbo.com','13-OCT-12','seller');
-INSERT INTO Employee VALUES
-  ('Bob','B','Bender','666666600','17-APR-1968','8794 Garfield','Chicago','IL','M',96000,null,8,'bbender@turbo.com','5-MAY-08','owner');
-INSERT INTO Employee VALUES
-  ('Jill','J','Jarvis','666666601','14-JAN-1966','6234 Lincoln','Chicago','IL','F',36000,'666666600',8,'jjarvis@turbo.com','21-JUN-11','seller');
-INSERT INTO Employee VALUES
-  ('Kate','W','King','666666602','16-APR-1966','1976 Boone Trace','Chicago','IL','F',44000,'666666600',8,'kking@turbo.com','20-NOV-10','seller');
-INSERT INTO Employee VALUES
-  ('Lyle','G','Leslie','666666603','09-JUN-1963','417 Hancock Ave','Chicago','IL','M',41000,'666666601',8,'lleslie@turbo.com','9-JAN-09','manager');
+INSERT INTO Employee1 VALUES
+  ('Jane','P','Keller','222222201','444444440','02-FEB-1992','22 CandyCane Ln','Greenwood','SC','29649','864-534-1423','jkeller@turbo.com','0001',25000,'15-JAN-11','66','seller');
+INSERT INTO Employee1 VALUES
+  ('Jeff','H','Chase','333333301','333333300','07-JAN-1970','145 Bradbury St','Sacramento','CA','90210','555-652-9826','jchase@turbo.com','0002',44000,'10-SEP-10','77','seller');
+INSERT INTO Employee1 VALUES
+  ('Bonnie','S','Bays','444444401','444444400','19-JUN-1956','111 Hollow Ln','Milwaukee','WI','45321','576-318-5376','bbays@turbo.com','0003',70000,'30-MAR-09','34','manager');
+INSERT INTO Employee1 VALUES
+  ('Alec','C','Best','444444402','444444400','18-JUN-1966','233 Solid St','Milwaukee','WI','45321','576-318-6639','abest@turbo.com','0005',60000,'22-AUG-10','66','seller');
+INSERT INTO Employee1 VALUES
+  ('Sam','S','Snedden','444444403','444444400','31-JUL-1977','987 Windy St','Milwaukee','WI','45321','576-318-9909','ssnedden@turbo.com','0004',48000,'20-DEC-11','99','seller');
+INSERT INTO Employee1 VALUES
+  ('Nandita','K','Ball','555555501','555555500','16-APR-1969','222 Howard','Sacramento','CA','90210','555-652-0055','nball@turbo.com','0002',62000,'13-OCT-12','11','seller');
+INSERT INTO Employee1 VALUES
+  ('Bob','B','Bender','666666600',NULL,'17-APR-1968','8794 Garfield','Chicago','IL','65132','834-312-7673','bbender@turbo.com','0013',96000,'5-MAY-08','01','owner');
+INSERT INTO Employee1 VALUES
+  ('Jill','J','Jarvis','666666601','666666600','14-JAN-1966','6234 Lincoln','Chicago','IL','65132','834-312-2321','jjarvis@turbo.com','0013',36000,'21-JUN-11','88','seller');
+INSERT INTO Employee1 VALUES
+  ('Kate','W','King','666666602','666666600','16-APR-1966','1976 Boone Trace','Chicago','IL','65132','834-312-1112','kking@turbo.com','0013',44000,'20-NOV-10','55','seller');
+INSERT INTO Employee1 VALUES
+  ('Lyle','G','Leslie','666666603','666666601','09-JUN-1963','417 Hancock Ave','Chicago','IL','65132','834-312-9451','lleslie@turbo.com','0013',41000,'9-JAN-09','13','manager');
 --
 INSERT INTO Customer VALUES
-  ('customer1@yahoo.com','customer1','Bob','Jones','A','123 Main St','Columbia','SC','29212','password1','803-515-1555');
+  ('customer1@yahoo.com','customer1','Bob','Jones','A','123 Main St','Columbia','SC','29212','password1','803-515-1555','2HJBH12TZLM109185','66');
 INSERT INTO Customer VALUES
-  ('customer2@yahoo.com','customer2','Addy','McFly','B','23 Wayward Way','Lame Town','MN','90210','password2','545-575-5955');
+  ('customer2@yahoo.com','customer2','Addy','McFly','B','23 Wayward Way','Lame Town','MN','90210','password2','545-575-5955','4IBDJ32LMAP323435','77');
 INSERT INTO Customer VALUES
-  ('customer3@yahoo.com','customer3','Joe','Norm','C','1 Stanley Ave','Boone','NC','30132','password3','788-588-5235');
+  ('customer3@yahoo.com','customer3','Joe','Norm','C','1 Stanley Ave','Boone','NC','30132','password3','788-588-5235','6ASFT05EIMG135463','34');
 INSERT INTO Customer VALUES
-  ('customer4@yahoo.com','customer4','Steve','Fusco','D','3 Hustlebustle Lane','Atlanta',GA','86342','password4','234-765-1235');
+  ('customer4@yahoo.com','customer4','Steve','Fusco','D','3 Hustlebustle Lane','Atlanta','GA','86342','password4','234-765-1235','5EFAD14FEIM435345','66');
 INSERT INTO Customer VALUES
-  ('customer5@yahoo.com','customer5','Rob','Buck','E','12 South St','Newtown','AL','09765','passwor5','555-555-5555');
+  ('customer5@yahoo.com','customer5','Rob','Buck','E','12 South St','Newtown','AL','09765','passwor5','555-555-5555','3LAVA46TZPD653427','99');
 INSERT INTO Customer VALUES
-  ('customer6@yahoo.com','customer6','Ashley','Ing','F','1389 Harbison Blvd','Tampa','FL','17564','password6','803-543-7659');
+  ('customer6@yahoo.com','customer6','Ashley','Ing','F','1389 Harbison Blvd','Tampa','FL','17564','password6','803-543-7659','7ELAE94PLA4326453','11');
 INSERT INTO Customer VALUES
-  ('customer7@yahoo.com','customer7','Lei','Jong','G','701 Streets St','Columbia','ME','56321','password7','803-345-9990');
+  ('customer7@yahoo.com','customer7','Lei','Jong','G','701 Streets St','Columbia','ME','56321','password7','803-345-9990','9IFLF14KGM2546764','01');
 INSERT INTO Customer VALUES
-  ('customer8@yahoo.com','customer8','Kimmy','Werth','H','90 Downtown St','Columbia','SC','98453','password8','803-765-1243');
+  ('customer8@yahoo.com','customer8','Kimmy','Werth','H','90 Downtown St','Columbia','SC','98453','password8','803-765-1243','3KFLZ26OFD4059754','88');
 INSERT INTO Customer VALUES
-  ('customer9@yahoo.com','customer9','Sarah','Piece','I','486 Baffin Bay','Columbia','SC','29212','password9','803-643-9973');
+  ('customer9@yahoo.com','customer9','Sarah','Piece','I','486 Baffin Bay','Columbia','SC','29212','password9','803-643-9973','4LSMA10LFS5643574','55');
 INSERT INTO Customer VALUES
-  ('customer10@yahoo.com','customer10','Danielle','Shaw','J','5 Huger St','Columbia','SC','29212','password10','803-743-5005');
+  ('customer10@yahoo.com','customer10','Danielle','Shaw','J','5 Huger St','Columbia','SC','29212','password10','803-743-5005','1MASE24EKF0495435','13');
 --
-INSERT INTO Store VALUES
+INSERT INTO storeLocation VALUES
   ('0001','555-555-5555','42 Highland Park Rd','Columbia','SC','29212');
-INSERT INTO Store VALUES
+INSERT INTO storeLocation VALUES
   ('0002','342-555-1234','95 Bypass Ln','Columbia','SC','29210');
-INSERT INTO Store VALUES
-  ('0013','654-555-5678','9096 Saco Ct ','Columbia','SC','29214');
-INSERT INTO Store VALUES
+INSERT INTO storeLocation VALUES
+  ('0003','654-555-5678','9096 Saco Ct ','Columbia','SC','29214');
+INSERT INTO storeLocation VALUES
   ('0005','867-555-9012','4 Ripley Station Rd','Saluda','SC','29243');
-INSERT INTO Store VALUES
-  ('0001','136-123-5555','265 Tabbot Dr','Greenwood','SC','29212');
-INSERT INTO Store VALUES
-  ('0003','876-234-5555','4209 Saint Andrews Rd','Irmo','SC','29212');
-INSERT INTO Store VALUES
+INSERT INTO storeLocation VALUES
+  ('0011','136-123-5555','265 Tabbot Dr','Greenwood','SC','29212');
+INSERT INTO storeLocation VALUES
+  ('0023','876-234-5555','4209 Saint Andrews Rd','Irmo','SC','29212');
+INSERT INTO storeLocation VALUES
   ('0004','786-456-5555','72 View Dr','Lakewood','SC','29212');
-INSERT INTO Store VALUES
-  ('0013','834-567-5555','452 Nothing St','Columbia','SC','29212');
-INSERT INTO Store VALUES
-  ('0002','672-789-5555','666 Dont Drive On Me Rd','Lucia','SC','29212');
-INSERT INTO Store VALUES
-  ('0001','825-890-5555','815 Roads Rd','Columbia','SC','29212');
+INSERT INTO storeLocation VALUES
+  ('0010','834-567-5555','452 Nothing St','Columbia','SC','29212');
+INSERT INTO storeLocation VALUES
+  ('0006','672-789-5555','666 Dont Drive On Me Rd','Lucia','SC','29212');
+INSERT INTO storeLocation VALUES
+  ('0009','825-890-5555','815 Roads Rd','Columbia','SC','29212');
+--
+INSERT INTO Transactions VALUES
+  ('customer1',200,'Cash','26-APR-15','30-APR-15','4593654365948649395');
+INSERT INTO Transactions VALUES
+  ('customer2',155,'Debit','03-MAY-15','10-MAY-15','5839604820586820193');
+INSERT INTO Transactions VALUES
+  ('customer3',228,'Credit','30-APR-15','04-MAY-15','5301295839203285692');
+INSERT INTO Transactions VALUES
+  ('customer4',110,'Check','25-APR-15','30-APR-15','2959485392578493573');
+INSERT INTO Transactions VALUES
+  ('customer5',234,'Credit','28-APR-15','02-MAY-15','2498543898435789357');
+INSERT INTO Transactions VALUES
+  ('customer6',140,'Debit','10-MAY-15','20-MAY-15','19430439895438954');
+INSERT INTO Transactions VALUES
+  ('customer7',224,'Credit','01-JUN-15','10-JUN-15','34998954398959439');
+INSERT INTO Transactions VALUES
+  ('customer8',160,'Cash','30-MAY-15','04-JUN-15','932489028492890348');
+INSERT INTO Transactions VALUES
+  ('customer9',94,'Debit','25-MAY-15','31-MAY-15','2134395734985349');
+INSERT INTO Transactions VALUES
+  ('customer10',102,'Credit','26-MAY-15','01-JUN-15','32495486948694845');
+
