@@ -1,41 +1,41 @@
-CREATE TABLE Vehicle (
-VIN varchar(20),
-Price decimal (3,2) not null,
+CREATE TABLE aVehicle (
+Price int not null,
 LicensePlateNum varchar(7) not null,
-Mileage number(6),
+Mileage int,
 vColor varchar(10),
-vYear number(4) not null,
+vYear varchar(4) not null,
 vMake varchar(20) not null,
 vModel varchar(20) not null,
+VIN varchar(17),
+storeNum varchar(4),
 vType varchar(10),
 vCondition varchar(20),
-storeNum number(4),
-RentedUntil date,
+RentedUntil varchar(20),
 primary key(VIN),
-foreign key(storeNum) references Store(storeNum)
+foreign key (storeNum) references storeLocation(storeNum)
 );
 
-CREATE TABLE Employee (
+CREATE TABLE Employee1 (
 FName varchar(50),
 Mint char(1),
 LName varchar(50),
-SSN number(9) not null,
-superSSN number(9),
-DOB date,
+SSN varchar(9) not null,
+superSSN varchar(9),
+DOB varchar(20),
 address varchar(50),
 city varchar(50),
 state char(2),
-zip number(5),
+zip varchar(5),
 phoneNum varchar(20) not null,
 email varchar(50),
-storeNum number(4),
-salary decimal(5,2) not null,
-startDate date,
-employeeID number(2) not null,
+storeNum varchar(4),
+salary int not null,
+startDate varchar(20),
+employeeID int not null,
 jobType varchar(20),
 primary key (SSN),
-foreign key (storeNum) references Store (storeNum),
-foreign key (superSSN) references Employee (SSN)
+foreign key (ssuperSSN) references Employee1(SSN),
+foreign key (storeNum) references storeLocation(storeNum)
 );
 
 CREATE TABLE Customer (
@@ -47,29 +47,33 @@ Mint char(1),
 address varchar(50),
 city varchar(50),
 state char(2),
-zip number(5),
+zip int,
 password varchar(20) not null,
 phoneNum varchar(20),
-primary key (email, userName)
+VIN varchar(20),
+sellerID varchar(4),
+primary key (userName),
+foreign key (VIN) references aVehicle(VIN),
+foreign key (sellerID) references Employee1(employeeID)
 );
 
-CREATE TABLE Store (
-storeNum number(4),
+CREATE TABLE storeLocation (
+storeNum varchar(4),
 phoneNum varchar(20) not null,
 address varchar(50),
 city varchar(50),
 state char(2),
-zip number(5),
+zip int,
 primary key (storeNum)
 );
 
-CREATE TABLE Transaction (
-userName varchar(50),
-amountCharged decimal(3,2),
+CREATE TABLE Transactions (
+username varchar(50),
+amountCharged int,
 payMethod varchar(20),
-checkOutDate date,
-checkInDate date,
-cardNumber number(20),
-primary key (userName),
-foreign key (userName) references Customer (userNamer)
+checkOutDate varchar(20),
+checkInDate varchar(20),
+cardNumber varchar(20),
+primary key (username),
+foreign key (username) references Customer(userName)
 );
