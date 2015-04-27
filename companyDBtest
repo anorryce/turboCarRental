@@ -1,14 +1,7 @@
-/*
- * CompanyDBTest.java
- *
- * Created on April 6, 2011, 9:46 AM
- */
+
 import java.sql.*; 
 import javax.swing.*;
-/**
- *
- * @author  glee
- */
+
 public class CompanyDBTest extends javax.swing.JFrame {
 
     /** Creates new form CompanyDBTest */
@@ -25,24 +18,156 @@ public class CompanyDBTest extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        jLabelDeptNo = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList();
+        jButton2 = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jList3 = new javax.swing.JList();
+        jButton3 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jList4 = new javax.swing.JList();
+        jButton4 = new javax.swing.JButton();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jList5 = new javax.swing.JList();
+        jButton5 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jList6 = new javax.swing.JList();
+        jButton6 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jList7 = new javax.swing.JList();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jList8 = new javax.swing.JList();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jList9 = new javax.swing.JList();
+        jButton9 = new javax.swing.JButton();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jList10 = new javax.swing.JList();
+        jLabel8 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        jList11 = new javax.swing.JList();
+        jLabel10 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabelDeptNo.setText("Department No");
+        jScrollPane2.setViewportView(jList2);
 
-        jScrollPane1.setViewportView(jList1);
-
-        jTextField1.setText("enter");
-
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setText("Query1");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jScrollPane3.setViewportView(jList3);
+
+        jButton3.setText("Query2");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setText("Q2 - Owner");
+
+        jScrollPane4.setViewportView(jList4);
+
+        jButton4.setText("Query3");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jScrollPane5.setViewportView(jList5);
+
+        jButton5.setText("Query4");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Q3 - avg(salary)");
+
+        jLabel3.setText("Q4 - store 2 max/sum salary");
+
+        jScrollPane6.setViewportView(jList6);
+
+        jButton6.setText("Query5");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Q5 - how many customers");
+
+        jLabel5.setText("Q1 - price/if available");
+
+        jScrollPane7.setViewportView(jList7);
+
+        jScrollPane8.setViewportView(jList8);
+
+        jButton7.setText("Query6");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        jButton8.setText("Query7");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Q8 - customer's pay method");
+
+        jLabel7.setText("Q9 - who rented Honda ");
+
+        jScrollPane9.setViewportView(jList9);
+
+        jButton9.setText("Query8");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jScrollPane10.setViewportView(jList10);
+
+        jLabel8.setText("Q7 - same state as seller");
+
+        jButton10.setText("Query9");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Q10 - number of models");
+
+        jScrollPane11.setViewportView(jList11);
+
+        jLabel10.setText("Q6 - names w/ their VINs");
+
+        jButton11.setText("Query10");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
             }
         });
 
@@ -51,78 +176,187 @@ public class CompanyDBTest extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jButton2))
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3))
+                        .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabelDeptNo)
+                                .addComponent(jButton4)
+                                .addGap(9, 9, 9))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jButton6)
+                                .addGap(150, 156, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
+                                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel5)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addComponent(jButton1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jButton7))
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton8))
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton9))
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, 0)
+                                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
+                                .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(7, 7, 7)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel10)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelDeptNo)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton2)
+                            .addComponent(jButton3)
+                            .addComponent(jButton4)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel4)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton5)
+                            .addComponent(jButton6))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton7)
+                            .addComponent(jButton8)
+                            .addComponent(jButton9)
+                            .addComponent(jButton10)
+                            .addComponent(jButton11)))
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9)))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>                        
 
-private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-// TODO add your handling code here:
-    try {
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try {
       // load JDBC driver for Oracle.
       // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
       Class.forName ("oracle.jdbc.driver.OracleDriver");
     } catch (ClassNotFoundException e) {
         System.out.println ("Could not load the driver"); 
       }
-
+        
     try {
         // connection string format
         // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
         Connection conn = DriverManager.getConnection
             ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
 
-        String query = "select fname, salary from employee where dno = ?";
-        PreparedStatement p = conn.prepareStatement (query); 
-        String ssn = jTextField1.getText();
+        String query1 = "select Price, vMake, vModel, RentedUntil from aVehicle";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
         // get ready to provide parameter(s)
         p.clearParameters();
 
         // provide parameter to statement.
-        p.setInt(1, Integer.parseInt(ssn));
+        //p.setInt(1, Integer.parseInt(ssn));
         //p.setString(1,ssn);
         // execute select query p
         ResultSet r = p.executeQuery();
-        
         // read next record one by one
         int i=0;
         DefaultListModel lModel = new DefaultListModel();
-        jList1.setModel(lModel);
+        jList2.setModel(lModel);
         while (r.next ()) { 
             
-          String fname = r.getString(1); // get 1st attribute from the result tuple. 
+          int Price = r.getInt(1); // get 1st attribute from the result tuple. 
             //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
-          float fSalary = r.getFloat(2); // get 2nd attribute from the result tuple
+          String vMake = r.getString(2); // get 2nd attribute from the result tuple
+          String vModel = r.getString(3);
+          String RentedUntil = r.getString(4);
           
-          lModel.addElement(fname);
+          lModel.addElement(Price);
           i++;
-          lModel.addElement(fSalary);
+          lModel.addElement(vMake);
+          i++;
+          lModel.addElement(vModel);
+          i++;
+          lModel.addElement(RentedUntil);
           i++;
           //System.out.println(fname + "  " + fSalary);
         }         
@@ -134,8 +368,551 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
     } catch (SQLException e)
     {
         System.out.print(e);
-    }      
-}                                        
+    }
+        
+    }                                        
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select FName, LName from Employee1 where superSSN is NULL";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList3.setModel(lModel);
+        while (r.next ()) { 
+            
+          //int Price = r.getInt(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          String FName = r.getString(1); // get 2nd attribute from the result tuple
+          String LName = r.getString(2);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(FName);
+          i++;
+          lModel.addElement(LName);
+          i++;
+          //lModel.addElement(vModel);
+          //i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                        
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select storeNum, count(*), avg(salary) from Employee1 group by storeNum";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList4.setModel(lModel);
+        while (r.next ()) { 
+            
+          String storeNum = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          int count = r.getInt(2); // get 2nd attribute from the result tuple
+          String avgsalary = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(storeNum);
+          i++;
+          lModel.addElement(count);
+          i++;
+          lModel.addElement(avgsalary);
+          i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                        
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select sum(salary), max(salary) from Employee1 where storeNum = '0002'";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList5.setModel(lModel);
+        while (r.next ()) { 
+            
+          String sumsalary = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          int maxsalary = r.getInt(2); // get 2nd attribute from the result tuple
+          //String vModel = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(sumsalary);
+          i++;
+          lModel.addElement(maxsalary);
+          i++;
+          //lModel.addElement(vModel);
+          //i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+        
+    }                                        
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select count(*) from Customer";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList6.setModel(lModel);
+        while (r.next ()) { 
+            
+          int count = r.getInt(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          //int salary = r.getInt(2); // get 2nd attribute from the result tuple
+          //String vModel = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(count);
+          i++;
+          //lModel.addElement(salary);
+          //i++;
+          //lModel.addElement(vModel);
+          //i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                        
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select v.VIN, c.FName, c.LName from aVehicle v, Customer c where v.VIN = c.VIN";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList8.setModel(lModel);
+        while (r.next ()) { 
+            
+          String vVIN = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          String cFName = r.getString(2); // get 2nd attribute from the result tuple
+          String cLName = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(vVIN);
+          i++;
+          lModel.addElement(cFName);
+          i++;
+          lModel.addElement(cLName);
+          i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                        
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select e.FName, e.LName from Employee1 e join Customer c on e.state = c.state where e.EmployeeID = c.SellerID";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList9.setModel(lModel);
+        while (r.next ()) { 
+            
+          String fname = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          String lname = r.getString(2); // get 2nd attribute from the result tuple
+          //String vModel = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(fname);
+          i++;
+          lModel.addElement(lname);
+          i++;
+          //lModel.addElement(vModel);
+          //i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                        
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select c.FName, c.LName, t.payMethod from Customer c join Transactions t on c.userName = t.userName where c.userName = t.username";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList11.setModel(lModel);
+        while (r.next ()) { 
+            
+          String fname = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          String lname = r.getString(2); // get 2nd attribute from the result tuple
+          String pay = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(fname);
+          i++;
+          lModel.addElement(lname);
+          i++;
+          lModel.addElement(pay);
+          i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                        
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select FName, LName from Customer c join aVehicle v on c.VIN = v.VIN where v.vMake = 'Honda'";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList7.setModel(lModel);
+        while (r.next ()) { 
+            
+          String fname = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          String lname = r.getString(2); // get 2nd attribute from the result tuple
+          //String vModel = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(fname);
+          i++;
+          lModel.addElement(lname);
+          i++;
+          //lModel.addElement(vModel);
+          //i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                         
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        try {
+      // load JDBC driver for Oracle.
+      // Need to have ojdbc14_g.jar in classpath to be able to use oracle.jdbc.driver.OracleDriver
+      Class.forName ("oracle.jdbc.driver.OracleDriver");
+    } catch (ClassNotFoundException e) {
+        System.out.println ("Could not load the driver"); 
+      }
+        
+    try {
+        // connection string format
+        // Use "jdbc:oracle:thin:@localhost:1521:xe" to access locally stored Oracle with 'xe' as SID
+        Connection conn = DriverManager.getConnection
+            ("jdbc:oracle:thin:@localhost:1521:xe","projectpart2","password");
+
+        String query1 = "select vModel, count(*) from aVehicle join storeLocation on aVehicle.storeNum = storeLocation.storeNum group by vModel";
+        PreparedStatement p = conn.prepareStatement (query1); 
+        //String ssn = jTextField1.getText();
+        // get ready to provide parameter(s)
+        p.clearParameters();
+
+        // provide parameter to statement.
+        //p.setInt(1, Integer.parseInt(ssn));
+        //p.setString(1,ssn);
+        // execute select query p
+        ResultSet r = p.executeQuery();
+        // read next record one by one
+        int i=0;
+        DefaultListModel lModel = new DefaultListModel();
+        jList10.setModel(lModel);
+        while (r.next ()) { 
+            
+          String vModel = r.getString(1); // get 1st attribute from the result tuple. 
+            //If attribute is of other data type, other method such as getInt(int), getFloat(int), getDate(int) etc should be called
+          int count = r.getInt(2); // get 2nd attribute from the result tuple
+          //String vModel = r.getString(3);
+          //String RentedUntil = r.getString(4);
+          
+          lModel.addElement(vModel);
+          i++;
+          lModel.addElement(count);
+          i++;
+          //lModel.addElement(vModel);
+          //i++;
+          //lModel.addElement(RentedUntil);
+          //i++;
+          //System.out.println(fname + "  " + fSalary);
+        }         
+        
+        // if query is INSERT, DELETE, UPDATE, execute the query as follows:
+        // int n = p.executeUpdate();
+        // conn.commit(); // permanently saves the update
+            conn.close();       
+    } catch (SQLException e)
+    {
+        System.out.print(e);
+    }
+    }                                         
 
     /**
     * @param args the command line arguments
@@ -149,11 +926,46 @@ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
     }
 
     // Variables declaration - do not modify                     
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabelDeptNo;
-    private javax.swing.JList jList1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JList jList10;
+    private javax.swing.JList jList11;
+    private javax.swing.JList jList2;
+    private javax.swing.JList jList3;
+    private javax.swing.JList jList4;
+    private javax.swing.JList jList5;
+    private javax.swing.JList jList6;
+    private javax.swing.JList jList7;
+    private javax.swing.JList jList8;
+    private javax.swing.JList jList9;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     // End of variables declaration                   
 
 }
